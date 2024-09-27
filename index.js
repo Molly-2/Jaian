@@ -21,7 +21,7 @@ app.get('/ask-question', async (req, res) => {
             'https://api.ai21.com/studio/v1/j2-large/complete',  // Updated endpoint for 'j2-large' model
             {
                 prompt: `You are an AI created by Hassan. Answer the following question accordingly: ${prompt}`,
-                maxTokens: 64,  // Set maxTokens for response
+                maxTokens: 1000,  // Set maxTokens for response
                 temperature: 0.7,  // Adjust creativity
                 topP: 1.0  // Adjust variability of response
             },
